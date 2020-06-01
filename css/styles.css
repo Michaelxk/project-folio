@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;900&family=Roboto:wght@300&display=swap");
+:root {
+  --primaryColor: #121212;
+  --secundaryColor: #7c7c7c;
+  --profileBg: #262626;
+  --contrastColor: #86fcb0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+}
+
+.wrapper {
+  background-color: var(--primaryColor);
+  color: #fff;
+  height: 100vh;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+h1 span {
+  color: var(--secundaryColor);
+}
+
+.menu {
+  display: flex;
+  margin-top: 50px;
+}
+
+.menu li {
+  list-style: none;
+  margin-right: 20px;
+  padding: 10px 10px;
+}
+
+.menu li:hover {
+  background-color: var(--contrastColor);
+  color: #000;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--secundaryColor);
+  font-size: 1.2em;
+}
+
+.menu .active {
+  color: #fff;
+}
+
+.menu li a:active {
+  color: #fff;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+}
+
+.about .circle {
+  background-color: var(--contrastColor);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.about .profile-pic {
+  clip-path: circle(50% at 50% 50%);
+  background-color: var(--profileBg);
+  height: 50vh;
+  width: 50vh;
+  margin: 50px;
+}
+.about .profile-pic img {
+  max-width: 100%;
+}
+
+.content-info {
+  width: 40%;
+}
+
+.content-info h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.content-info span {
+  color: var(--contrastColor);
+  font-size: 1.5em;
+}
+
+.networking {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+
+.networking .email-phone {
+  margin-top: 60px;
+}
+
+.networking .email-phone h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+.networking .cool-text {
+  font-size: 4em;
+}
+
+.networking .cool-text span {
+  color: var(--contrastColor);
+}
+
+.networking .social-network {
+  color: #fff;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: flex;
+  margin-bottom: 140px;
+  margin-top: -120px;
+}
+.networking .social-network h4 {
+  margin-left: -50px;
+  margin-right: 20px;
+}
+
+.networking .social-network .divider {
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.networking .social-network a {
+  margin-right: 20px;
+  margin-top: -8px;
+  font-size: 1.5em;
+  color: var(--secundaryColor);
+}
+
+.networking .social-network i:hover {
+  color: var(--contrastColor);
+}
