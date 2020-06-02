@@ -46,11 +46,6 @@ h1 span {
   padding: 10px 10px;
 }
 
-.menu li:hover {
-  background-color: var(--contrastColor);
-  color: #000;
-}
-
 .menu li a {
   text-decoration: none;
   color: var(--secundaryColor);
@@ -61,13 +56,14 @@ h1 span {
   color: #fff;
 }
 
-.menu li a:active {
-  color: #fff;
+.menu li a:hover {
+  color: var(--contrastColor);
 }
 
 .about .container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .about .circle {
@@ -107,21 +103,23 @@ h1 span {
   justify-content: space-around;
   margin-top: 3em;
 }
-
+/* 
 .networking .email-phone {
   margin-top: 60px;
 }
 
 .networking .email-phone h4 {
   font-family: "Roboto", sans-serif;
-}
+} */
 
 .networking .cool-text {
   font-size: 4em;
+  margin-left: 3em;
 }
 
 .networking .cool-text span {
   color: var(--contrastColor);
+  letter-spacing: 2px;
 }
 
 .networking .social-network {
